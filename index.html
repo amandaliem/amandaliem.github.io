@@ -3,44 +3,57 @@
 
 <style>
 
-@font_face{
-	font-family: "secretCode";
-	src: url(secrcode.ttf);
-}
 .font_0{
 	font: normal normal normal 70px/1.4em sacramento,cursive;
 	color: #2C2C2B;
+	background-color: #ffffff;
+	height: 105px;
+    border: 1px solid gray;
+    opacity: 0.95;
+    filter: alpha(opacity=60); 
+    margin:40px;
+    margin-bottom:20px;
+
 }
 
 
+.font_1{
+	font: normal normal normal 70px/1.4em Abel;
+	color: #2C2C2B;
+	font-size: 20px;
+}
+
+a:link    {color:#000000; background-color:transparent; text-decoration:none}
+a:visited {color:#000000; background-color:transparent; text-decoration:none}
+a:hover   {color:#ff0000; background-color:transparent; text-decoration:underline}
+a:active  {color:#ff0000; background-color:transparent; text-decoration:underline}
+
 #catframe{border:0;}
 
-div.transbox {
-	/*width: 50%;*/
+div.transbox{
 	height: 600px;
-	display: block;
-	left: 5px;
-	right: 5px;
+	display:block;
 	position: relative;
-	top: 0px;
-	margin: 50px;
-    background-color: #ffffff;
+	background-color: #ffffff;
     border: 1px solid gray;
     opacity: 0.8;
-    filter: alpha(opacity=60); /* For IE8 and earlier */
+    filter: alpha(opacity=60); 
+
 }
 
 div.transbox p {
     margin: 50px;
-    font-weight: bold;
+    font-weight: normal;
     color: #000000;
 }
 
 body{background-image: url("test.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position:50% 130px;
+	background-position:50% 90px;
 	background-color: white;
+	margin-bottom: 50px;
+	margin:0px;
 }
 
 
@@ -51,8 +64,38 @@ body{background-image: url("test.jpg");
 #rightside{
 	width:50%;
 }
+section{
+	width: 90%;
+    height: 600px;
+    /* background: aqua; */
+    margin: auto; 
+    padding: 10px;
+    font: normal normal normal 70px/1.4em Abel;
+	color: #2C2C2B;
+	font-size: 20px;
+}
 
+div#one {
+    width: 60%;
+    background: white;
+    float: left;
+    font-weight: bold;
+    color: #000000;
+}
+div#two {
+    float: right;
+    width: 30%;
+    font-weight: bold;
+    color: #000000;
+}
 
+#myheader{
+	margin: 0px;
+	height:80px;
+	background: #FFEFBB;
+	color:white;
+	border-bottom: 3px solid #F7DD8F;
+}
 </style>
 
 <script>
@@ -62,14 +105,22 @@ body{background-image: url("test.jpg");
 	}
 
 </script>
-<head> <link href='http://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
+<div id="myheader"></div>
+<head> 
+	<link href='http://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <h1 style="text-align:center;" class="font_0">Amanda's page </h1>
-
-<div class="transbox">
-    <p>Hi! Don't worry, there's more coming :)</p>
+<section>
+<div id="one" class="transbox">
+	<p class="font_1">Hi! Don't worry, there's more coming :)</p>
 </div>
+<div id="two" class="transbox">
+    <p> <a href="pageone.html"> <center> <i> Projects </i> </a> </center> </p>
+</div>
+</section>
+
 <!-- <button type="button" onclick="window.location.href = 'pageone.html';">Next Page </button> 
 
 <div id="hello">
@@ -79,4 +130,7 @@ body{background-image: url("test.jpg");
 </div> -->
 
 </body>
+<footer>
+ 
+</footer>
 </html>
