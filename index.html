@@ -3,32 +3,80 @@
 
 <style>
 
+@font_face{
+	font-family: "secretCode";
+	src: url(secrcode.ttf);
+}
+.font_0{
+	font: normal normal normal 70px/1.4em sacramento,cursive;
+	color: #2C2C2B;
+}
 
-h1{text-align:center; font-family: "Arial", Times, Sans-serif; color: green; font-weight:lighter;}
 
 #catframe{border:0;}
+
+div.transbox {
+	/*width: 50%;*/
+	height: 600px;
+	display: block;
+	left: 5px;
+	right: 5px;
+	position: relative;
+	top: 0px;
+	margin: 50px;
+    background-color: #ffffff;
+    border: 1px solid gray;
+    opacity: 0.8;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+    margin: 50px;
+    font-weight: bold;
+    color: #000000;
+}
 
 body{background-image: url("test.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position:50% 50%;
+	background-position:50% 130px;
 	background-color: white;
+}
+
+
+
+#myform{
+	text-align: center;
+}
+#rightside{
+	width:50%;
 }
 
 
 </style>
 
+<script>
+
+	function clicker(){
+				
+	}
+
+</script>
+<head> <link href='http://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
+</head>
 <body>
-<h1>AMANDA'S PAGE</h1>
-<p class="main">I'm hosted with Github Pages.</p>
+<h1 style="text-align:center;" class="font_0">Amanda's page </h1>
 
-
+<div class="transbox">
+    <p>Hi! Don't worry, there's more coming :)</p>
+</div>
+<!-- <button type="button" onclick="window.location.href = 'pageone.html';">Next Page </button> 
 
 <div id="hello">
 
 	<iframe id="catframe" src="http://1-ps.googleusercontent.com/hk/pEsVsjur9-mHhASR14jwUkOv66/www.catgifpage.com/gifs/249.gif.pagespeed.ce.8aonoEebkeCEWmPreXRx.gif" scrolling="no" seamless="seamless"> Your browser doesn't support iframes or something. </iframe>
 
-</div>
+</div> -->
 
 </body>
 </html>
